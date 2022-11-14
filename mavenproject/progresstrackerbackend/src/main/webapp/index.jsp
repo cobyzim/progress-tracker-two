@@ -17,7 +17,10 @@
 		System.out.println("These are all the shows in the show DB:\n");
 		
 		for (Show show : showDAO.getAllShows()) {
-			System.out.println(show);
+			//System.out.println(show);
+			%>
+			<p> <%=show %> </p>
+			<% 
 		}
 	%>
 	
