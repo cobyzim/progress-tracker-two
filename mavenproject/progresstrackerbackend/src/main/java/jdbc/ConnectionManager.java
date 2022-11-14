@@ -16,29 +16,33 @@ public class ConnectionManager {
 	private static void makeConnection() {
 		
 		// Properties will be used to access our properties file and read its values 
-		Properties props = new Properties();
+		//Properties props = new Properties();
 		
 		// use the FileInputStream to load in the values from the file to props
-		try {
-			props.load(new FileInputStream("resources/config.properties"));
-			
-		} catch(IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			props.load(new FileInputStream("resources/config.properties"));
+//			
+//		} catch(IOException e) {
+//			e.printStackTrace();
+//		}
 		
 		// save the values to the variables, use the same name as what is written in the
 		// file to get the values
-		String url = props.getProperty("url");
-		String username = props.getProperty("username");
-		String password = props.getProperty("password");
+//		String url = props.getProperty("url");
+//		String username = props.getProperty("username");
+//		String password = props.getProperty("password");
 		
 		
 		// finally, establish the connection
 		try {
-			connection = DriverManager.getConnection(url, username, password);
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=EST5EDT", "root", "Root@123");
 			System.out.println("Established connection");
 			
 		} catch(SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
