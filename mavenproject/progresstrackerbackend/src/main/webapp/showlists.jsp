@@ -9,6 +9,15 @@ div.gallery:hover {
   border: 2px solid black;
 }
 
+input[name="show"]{
+	width: 20px;
+}
+
+.submit{
+	height: 30px;
+	width:100%
+}
+
 .gallery{
   padding-bottom:20px;
   display: flex;
@@ -155,8 +164,8 @@ body{
   <div class="desc">A Street Kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an Edgerunner, a Mercenary outlaw also known as a Cyberpunk.</div>
 </div>
 
-
 </fieldset>
-</body>
 
+
+</body>
 </html>
