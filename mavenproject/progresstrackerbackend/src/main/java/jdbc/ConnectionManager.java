@@ -4,8 +4,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
+import dao.User;
 
 public class ConnectionManager {
 
@@ -52,6 +54,7 @@ public class ConnectionManager {
 		
 		return connection;
 	}
+
 
 public static void main(String[] args) {
 
