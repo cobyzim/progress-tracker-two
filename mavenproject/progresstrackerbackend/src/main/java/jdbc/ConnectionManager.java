@@ -36,7 +36,7 @@ public class ConnectionManager {
 		// finally, establish the connection
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=EST5EDT", "root", "root");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=EST5EDT", "root", "Root@123");
 			System.out.println("Established connection");
 			
 		} catch(SQLException e) {
