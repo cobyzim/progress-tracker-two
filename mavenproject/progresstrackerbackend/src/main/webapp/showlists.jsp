@@ -57,9 +57,9 @@ body{
 <body>
 <fieldset>
 <h1>Top 10 TV Shows </h1>
-
+<form action="selected.jsp">
 <div class="gallery">
-  <input type="radio" id="Peaky Blinders" name="show" value="Peaky Blinders">
+  <input type="checkbox" id="Peaky Blinders" name="show" value="Peaky Blinders">
   <div class="imgHolder">
     <a href="Peaky blinders.jpeg" target="_blank">
       <img src="showsImg/Peaky blinders.jpeg" alt="Peaky Blinders" width="250" height="350">
@@ -71,7 +71,7 @@ body{
 
 
 <div class="gallery">
-  <input type="radio" id="Friends" name="show" value="Friends">
+  <input type="checkbox" id="Friends" name="show" value="Friends">
   <div class="imgHolder">
     <a href="friends.jpg" target="_blank">
       <img src="showsImg/friends.jpg" alt="Friends"  width="250" height="350">
@@ -81,7 +81,7 @@ body{
 </div>
 
 <div class="gallery">
-  <input type="radio" id="Demon" name="show" value="Demon">
+  <input type="checkbox" id="Demon" name="show" value="Demon">
   <div class="imgHolder">
     <a target="_blank" href="demon.jpeg">
       <img src="showsImg/demon.jpeg" alt="Demon Slayer" width="250" height="350">
@@ -93,7 +93,7 @@ body{
 </div>
 
 <div class="gallery">
-  <input type="radio" id="The Mandalorian" name="show" value="The Mandalorian">
+  <input type="checkbox" id="The Mandalorian" name="show" value="The Mandalorian">
   <div class="imgHolder">
     <a target="_blank" href="Mandalorian.jpeg">
     <img src="showsImg/mandalorian.jpg" alt="The Mandalorian" width="250" height="350">
@@ -103,7 +103,7 @@ body{
 </div>
 
 <div class="gallery">
-  <input type="radio" id="Kenobi" name="show" value="Kenobi">
+  <input type="checkbox" id="Kenobi" name="show" value="Kenobi">
   <div class="imgHolder">
     <a target="_blank" href="kenobi.jpeg">
       <img src="showsImg/kenobi.jpeg" alt="Kenobi" width="250" height="350">
@@ -115,7 +115,7 @@ body{
 </div>
 
 <div class="gallery">
-  <input type="radio" id="Shameless" name="show" value="Shameless">
+  <input type="checkbox" id="Shameless" name="show" value="Shameless">
   <div class="imgHolder">
     <a target="_blank" href="shameless.jpg">
       <img src="showsImg/shameless.jpg" alt="Shameless" width="250" height="350">
@@ -125,7 +125,7 @@ body{
 </div>
 
 <div class="gallery">
-  <input type="radio" id="euphoria" name="show" value="euphoria">
+  <input type="checkbox" id="euphoria" name="show" value="euphoria">
   <div class="imgHolder">
     <a target="_blank" href="euphoria.jpeg">
       <img src="showsImg/euphoria.jpeg" alt="Euphoria" width="250" height="350">
@@ -135,7 +135,7 @@ body{
 </div>
 
 <div class="gallery">
-  <input type="radio" id="Braking" name="show" value="Breaking">
+  <input type="checkbox" id="Braking" name="show" value="Breaking">
   <div class="imgHolder">
     <a target="_blank" href="breaking bad.jpg">
       <img src="showsImg/breaking bad.jpg" alt="Breaking Bad" width="250" height="350">
@@ -145,7 +145,7 @@ body{
 </div>
 
 <div class="gallery">
-  <input type="radio" id="Stranger" name="show" value="Stranger">
+  <input type="checkbox" id="Stranger" name="show" value="Stranger">
   <div class="imgHolder">
     <a target="_blank" href="stranger.jpg"></a>
     <img src="showsImg/stranger.jpg" alt="Stranger Things" width="250" height="350">
@@ -155,7 +155,7 @@ body{
 </div>
 
 <div class="gallery">
-  <input type="radio" id="cyber" name="show" value="cyber">
+  <input type="checkbox" id="cyber" name="show" value="cyber">
   <div class="imgHolder">
     <a target="_blank" href="cyber.jpeg">
       <img src="showsImg/cyber.jpeg" alt="Cyberpunk: Edgerunners" width="250" height="350">
@@ -163,9 +163,9 @@ body{
   </div>
   <div class="desc">A Street Kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an Edgerunner, a Mercenary outlaw also known as a Cyberpunk.</div>
 </div>
-
+<button type="submit" onclick="printChecked()">Submit form</button>
 </fieldset>
 
-
+</form>
 </body>
 </html>
